@@ -356,6 +356,14 @@ input[type="range"] {
     }
   }
 }
+@media (min-width: 1280px) {
+  .about-us-sign-up {
+    .border-top {
+      width: 107%;
+      transform: translateX(-25px);
+    }
+  }
+}
 @media (min-width: 1440px) {
   .card {
     width: 40%;
