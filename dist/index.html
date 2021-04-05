@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Frontend Mentor | Interactive pricing component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="heading-text">
+          <h1>Simple, traffic-based pricing</h1>
+          <p>Sign-up for our 30-day trial. No credit card required.</p>
+        </div>
+      </header>
+      <div class="card">
+        <h1 class="cost">$ 16.00 <span> / month</span></h1>
+        <h2 class="pageviews">100k Pageviews</h2>
+        <div class="range-container">
+          <input
+            type="range"
+            id="range"
+            class="range-background-color"
+            min="0"
+            max="100"
+            value="50"
+          />
+        </div>
+
+        <div class="billing">
+          <span class="billing-monthly">Monthly Billing</span>
+          <div class="checkbox-container">
+            <input
+              type="checkbox"
+              id="billing-checkbox"
+              aria-label="select monthly or yearly billing"
+            />
+            <label for="billing-checkbox"></label>
+          </div>
+          <span class="billing-yearly">Yearly Billing</span>
+          <span class="billing-discount">25%</span>
+        </div>
+
+        <div class="about-us-sign-up">
+          <div class="border-top"></div>
+          <div class="about-us">
+            <ul>
+              <li>
+                <img src="./images/icon-check.svg" alt="check icon" /> Unlimited
+                websites
+              </li>
+              <li>
+                <img src="./images/icon-check.svg" alt="check icon" /> 100% data
+                ownership
+              </li>
+              <li>
+                <img src="./images/icon-check.svg" alt="check icon" /> Email
+                reports
+              </li>
+            </ul>
+          </div>
+
+          <div class="sign-up">
+            <button class="btn">Start my trial</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://twitter.com/bailey_coding">Chris Bailey</a>.
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
